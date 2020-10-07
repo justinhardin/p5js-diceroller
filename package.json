@@ -1,0 +1,31 @@
+{
+  "name": "diceroller_light",
+  "version": "1.0.0",
+  "description": "Need a random number between 1 & 6, visually?",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "echo 'Starting Webpack dev server! \n' && webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justinhardin/diceroller_light.git"
+  },
+  "keywords": [
+    "dice",
+    "roller",
+    "p5.js"
+  ],
+  "author": "Justin Hardin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/justinhardin/diceroller_light/issues"
+  },
+  "homepage": "https://github.com/justinhardin/diceroller_light#readme",
+  "dependencies": {
+    "p5": "^1.1.9",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
