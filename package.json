@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/justinhardin/diceroller_light.git"
+    "url": "git+https://github.com/justinhardin/p5js-diceroller.git"
   },
   "keywords": [
     "dice",
