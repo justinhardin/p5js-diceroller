@@ -1,11 +1,13 @@
 {
-  "name": "p5js-diceroller",
+  "name": "@justinhardin/p5js-diceroller",
   "version": "1.0.0",
   "description": "Need a random number between 1 & 6, visually?",
-  "main": "index.js",
+  "private": true,
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "echo 'Starting Webpack dev server! \n' && webpack-dev-server"
+    "start": "echo 'Starting Webpack dev server! \n' && webpack-dev-server",
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
@@ -23,10 +25,22 @@
   },
   "homepage": "https://github.com/justinhardin/p5js-diceroller#readme",
   "dependencies": {
-    "p5": "^1.1.9",
+    "p5": "^1.1.9"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "babel-loader": "^8.1.0",
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
   },
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  }
 }

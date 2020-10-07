@@ -1,3 +1,7 @@
+
+
+
+
 export default function sketch(p){
     let canvas;
     let dice;
@@ -16,8 +20,8 @@ export default function sketch(p){
     let speedModifier = 0;
 
     p.preload = () => {
-        dice = p.loadModel('./assets/chessex_d6.stl', true);
-        font = p.loadFont('./assets/Roboto-Regular.ttf');
+        dice = p.loadModel('../assets/chessex_d6.stl', true);
+        font = p.loadFont('../assets/Roboto-Regular.ttf');
     }
 
     p.setup = () => {
