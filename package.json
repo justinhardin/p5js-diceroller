@@ -1,5 +1,5 @@
 {
-  "name": "diceroller_light",
+  "name": "p5js-diceroller",
   "version": "1.0.0",
   "description": "Need a random number between 1 & 6, visually?",
   "main": "index.js",
@@ -19,9 +19,9 @@
   "author": "Justin Hardin",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/justinhardin/diceroller_light/issues"
+    "url": "https://github.com/justinhardin/p5js-diceroller/issues"
   },
-  "homepage": "https://github.com/justinhardin/diceroller_light#readme",
+  "homepage": "https://github.com/justinhardin/p5js-diceroller#readme",
   "dependencies": {
     "p5": "^1.1.9",
     "webpack": "^4.44.2",
