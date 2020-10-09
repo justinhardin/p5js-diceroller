@@ -1,7 +1,7 @@
 # Dice Roller
 Diceroller is a simple p5.js sketch that rolls a 3d die and keeps track of the rolled value
 
-![Drag Racing](./assets/screenshot.png)
+![Drag Racing](src/assets/screenshot.png)
 
 ## To install
 1. npm install

@@ -1,6 +1,5 @@
-
-
-
+let diceModel = './assets/chessex_d6.stl'
+let fontTTF = './assets/Roboto-Regular.ttf'
 
 export default function sketch(p){
     let canvas;
@@ -20,15 +19,15 @@ export default function sketch(p){
     let speedModifier = 0;
 
     p.preload = () => {
-        dice = p.loadModel('../assets/chessex_d6.stl', true);
-        font = p.loadFont('../assets/Roboto-Regular.ttf');
+        dice = p.loadModel(diceModel, true);
+        font = p.loadFont(fontTTF);
     }
 
     p.setup = () => {
         canvas = p.createCanvas(500, 500, p.WEBGL);
         p.angleMode(p.DEGREES);
         p.textFont(font);
-        p.textSize(11);
+        p.textSize(12);
         p.textAlign(p.LEFT, p.BOTTOM);
     }
 
@@ -57,7 +56,7 @@ export default function sketch(p){
         p.push();
 
         // no deceleration when already stopped
-        if ((velocity.x != 0) && (velocity.y != 0)) {
+        if ((velocity.x !== 0) && (velocity.y !== 0)) {
 
             velocity.x = velocity.x * 0.992;
             velocity.y = velocity.y * 0.992;
@@ -156,7 +155,7 @@ export default function sketch(p){
 
     p.mousePressed = () => {
         // I've finished a roll and am clicking for a new role
-        if ((velocity.x === 0 && velocity.y === 0) && (location.x != 0) && (location.y != 0)) {
+        if ((velocity.x === 0 && velocity.y === 0) && (location.x !== 0) && (location.y !== 0)) {
             location.x = 0;
             location.y = 0;
         }
