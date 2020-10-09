@@ -1,6 +1,6 @@
 {
   "name": "@justinhardin/p5js-diceroller",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Need a random number between 1 & 6, visually?",
   "private": true,
   "type": "module",
