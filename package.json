@@ -1,6 +1,6 @@
 {
   "name": "@justinhardin/p5js-diceroller",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Need a random number between 1 & 6, visually?",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
