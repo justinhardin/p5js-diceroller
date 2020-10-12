@@ -1,12 +1,11 @@
 const path = require('path');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
 	entry: './src/index.js',
 	devServer: {
 		open: true,
-		openPage: '/index.html',
+		openPage: 'index.html',
 		contentBase: './dist',
 		port: 9000
 	},
@@ -16,6 +15,17 @@ module.exports = {
 				test: /\.(js)$/,
 				exclude: /node_modules/,
 				loader: 'babel-loader'
+			},
+			{
+				test: /\.(ttf|stl)$/,
+				use: [
+					{
+						loader: 'file-loader',
+						options: {
+							name: './assets/[name].[ext]',
+						},
+					},
+				]
 			}
 		]
 	},
@@ -27,12 +37,10 @@ module.exports = {
 		path: path.resolve(__dirname, 'dist'),
 	},
 	plugins: [
-		new CopyWebpackPlugin({
-			patterns: [
-				{from: 'src/assets', to: 'assets'}
-			]
-		}),
-		new HtmlWebpackPlugin()
+		new HtmlWebpackPlugin({
+			template: 'src/example.html',
+			title: 'Example Dice Roller'
+		})
 
 	]
 };

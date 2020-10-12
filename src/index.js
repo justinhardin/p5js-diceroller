@@ -1,4 +1,5 @@
 import p5 from 'p5';
 import sketch from './sketch.js';
-new p5(sketch);
 
+const containerElement = document.getElementById('diceroller-container');
+new p5(sketch, containerElement);

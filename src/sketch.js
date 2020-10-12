@@ -1,5 +1,5 @@
-let diceModel = './assets/chessex_d6.stl'
-let fontTTF = './assets/Roboto-Regular.ttf'
+import diceModel from './assets/chessex_d6.stl';
+import fontTTF from './assets/Roboto-Regular.ttf';
 
 export default function sketch(p){
     let canvas;
