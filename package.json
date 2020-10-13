@@ -1,6 +1,6 @@
 {
   "name": "@justinhardin/p5js-diceroller",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Need a random number between 1 & 6, visually? A 3D dice roller built with p5.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
