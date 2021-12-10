@@ -5,8 +5,6 @@ module.exports = {
 	entry: './src/index.js',
 	devServer: {
 		open: true,
-		openPage: 'index.html',
-		contentBase: './dist',
 		port: 9000
 	},
 	module: {
